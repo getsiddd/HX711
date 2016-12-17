@@ -5,7 +5,7 @@ It can also be used with other low cost load amplifiers like HX710A/B. It has be
 
 We are going to update the code with the new filter and drift correction soon as our research is complete.
 
-I declare that this code is under GNU General Public License and acknowledge the contribution of millis.h and millis.c files taken from github and uart.h an uart.c taken from the internet. If you have any problem in interfacing this code with arduino or avr, please use the github issues for this repository. let the whole world here your problem and solve it.
+I declare that this code is under GNU General Public License and acknowledge the contribution of millis.h and millis.c files taken from github and uart.h an uart.c taken from the internet. If you have any problem in interfacing this code with arduino or avr, please use the github issues for this repository. I will not entertain any personal Emails. Let the whole world here your problem and solve it.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -19,3 +19,12 @@ I declare that this code is under GNU General Public License and acknowledge the
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+Features of this library and execution code:-
+Can be used with atmega328p arduino, 
+Much faster than bodge HX711 library on avr and arduino (need some modifications if you want to use it, you can do it.)
+Have weight lock feature (feature not properly implemented in this version)
+
+Updates further coming are:-
+matlab code for filter and noise and drift cancellation with c implementations also.
+load cell graphs.
+and other enviromental and temperature compensations.
