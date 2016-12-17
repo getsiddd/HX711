@@ -5,7 +5,7 @@ It can also be used with other low cost load amplifiers like HX710A/B. It has be
 
 We are going to update the code with the new filter and drift correction soon as our research is complete.
 
-I declare that this code is under GNU General Public License and acknowledge the contribution of millis.h and millis.c files taken from github and uart.h an uart.c taken from an unknown source.
+I declare that this code is under GNU General Public License and acknowledge the contribution of millis.h and millis.c files taken from github and uart.h an uart.c taken from the internet. If you have any problem in interfacing this code with arduino or avr, please use the github issues for this repository. let the whole world here your problem and solve it.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
