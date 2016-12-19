@@ -64,30 +64,28 @@ uint32_t HX711_read(void)
  
     DOUT_SET_HIGH;
     
-    //_delay_us(1);
+    _delay_us(1);
  
     PD_SCK_SET_LOW;
-    //_delay_us(1);
+    _delay_us(1);
  
     count=0; 
     while(DOUT_READ); 
     for(i=0;i<24;i++)
     { 
         PD_SCK_SET_HIGH; 
-        //_delay_us(1);
+        _delay_us(1);
         count=count<<1; 
         PD_SCK_SET_LOW; 
-        //_delay_us(1);
+        _delay_us(1);
         if(DOUT_READ)
             count++; 
     } 
-
-    for(int i=0;i<GAIN;i++){
-        PD_SCK_SET_HIGH; 
-        //_delay_us(1);
-        PD_SCK_SET_LOW; 
-        //_delay_us(1);
-    }
+    count = count>>6;
+    PD_SCK_SET_HIGH; 
+    _delay_us(1);
+    PD_SCK_SET_LOW; 
+    _delay_us(1);
     count ^= 0x800000;
     return(count);
 }
